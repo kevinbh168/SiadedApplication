@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_card"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10dp"
+
+    >
+<!--    android:clickable="true"
+android:focusable="true"-->
+
+    <RelativeLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/success"
+            android:padding="3dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:text="PENSION_2019 MARZO"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp">
+        <TextView
+            android:id="@+id/montofinalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:text="Monto Final:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/acuentaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/montofinalLabel"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:text="Acuenta:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/deudaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acuentaLabel"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:text="Deuda:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/estadoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deudaLabel"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:text="Estado:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/montofinalText"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/marginStart_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:layout_marginEnd="10dp"
+            android:text="Pension_marzo2019" />
+
+        <TextView
+            android:id="@+id/acuentaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/montofinalText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/marginStart_pagos_card"
+            android:layout_alignParentEnd="true"
+            android:text="20/10/2019"/>
+        <TextView
+            android:id="@+id/deudaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acuentaText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:layout_marginStart="@dimen/marginStart_pagos_card"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:text="S/. 300.00"
+            />
+
+        <TextView
+            android:id="@+id/estadoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/deudaText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/marginTop_pagos_card"
+            android:layout_marginStart="@dimen/marginStart_pagos_card"
+            android:textSize="@dimen/textSize_pagos_card"
+            android:text=" CANCELADO"
+            android:drawableLeft="@drawable/ic_icon_check"
+            android:layout_marginEnd="10dp"
+             />
+
+            <ImageButton
+                android:id="@+id/pago_menu"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="center"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_more_vert_24px">
+
+            </ImageButton>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_home_24px"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_notas"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_book"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Notas"
+            />
+        <item
+            android:id="@+id/nav_asistencia"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_calendar_today_24px"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Asistencia" />
+        <item
+            android:id="@+id/nav_pagos"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_credit_card"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Pagos" />
+        <item
+            android:id="@+id/nav_alumno"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_person"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Perfil de alumno" />
+        <item
+            android:id="@+id/nav_comunicados"
+            android:clickable="true"
+            android:focusable="true"
+            android:icon="@drawable/ic_notifications_active_24px"
+            app:itemIconTint="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:title="Comunicados" />
+
+    </group>
+        <group
+            android:id="@+id/grp_2"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_informacion"
+                android:clickable="true"
+                android:focusable="true"
+                app:itemIconTint="@color/colorPrimary"
+                android:icon="@drawable/ic_info"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:title="Información" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:clickable="true"
+                android:focusable="true"
+                android:icon="@drawable/ic_sign_in"
+                app:itemIconTint="@color/colorPrimary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:title="Cerrar Sesión" />
+        </group>
+
+</menu>

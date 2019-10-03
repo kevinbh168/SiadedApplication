@@ -47,7 +47,7 @@ public class PagosAdapter extends RecyclerView.Adapter<PagosAdapter.ViewHolder> 
             public void onClick(View view) {
                 PopupMenu popupMenu = new PopupMenu(context, viewHolder.menuImageButton);
                 popupMenu.inflate(R.menu.menu_pagos_opciones);
-                popupMenu.setGravity(Gravity.LEFT);
+                popupMenu.setGravity(Gravity.RIGHT);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {

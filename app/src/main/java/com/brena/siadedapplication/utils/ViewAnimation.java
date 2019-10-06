@@ -40,12 +40,12 @@ public class ViewAnimation {
         v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         final int targtetHeight = v.getMeasuredHeight();
 
-        v.getLayoutParams().height = 0;
+        //v.getLayoutParams().height = 0;
         v.setVisibility(View.VISIBLE);
         Animation a = new Animation() {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
-                v.getLayoutParams().height = interpolatedTime == 1
+                v.getLayoutParams().height = interpolatedTime == 4
                         ? ViewGroup.LayoutParams.WRAP_CONTENT
                         : (int) (targtetHeight * interpolatedTime);
                 v.requestLayout();

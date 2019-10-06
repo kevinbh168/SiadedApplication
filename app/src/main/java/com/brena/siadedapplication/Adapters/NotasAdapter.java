@@ -81,7 +81,6 @@ public class NotasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             ArrayAdapter <String> adapter=new ArrayAdapter<String>(context,android.R.layout.simple_list_item_1,bimestres);
             view.cursoListView.setAdapter(adapter);
 
-
             final Social p = items.get(position);
             view.notasArea.setText(p.name);
             view.name.setText("curso 1");
@@ -103,7 +102,6 @@ public class NotasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 }
             });
 
-
             // void recycling view
             if(p.expanded){
                 view.lyt_expand.setVisibility(View.VISIBLE);
@@ -113,8 +111,6 @@ public class NotasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             Tools.toggleArrow(p.expanded, view.bt_expand, false);
 
         }
-
-
     }
 
     private boolean toggleLayoutExpand(boolean show, View view, View lyt_expand) {
@@ -129,7 +125,7 @@ public class NotasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return 4;
     }
 
 

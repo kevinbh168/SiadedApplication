@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <LinearLayout
+
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+       <LinearLayout
+           android:id="@+id/layout_modal_1"
+           android:layout_width="320dp"
+           android:layout_height="wrap_content"
+           android:padding="5dp">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="2"
+               android:textSize="18sp"
+               android:paddingStart="5dp"
+               android:textStyle="bold"
+               android:text="Fecha :">
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textSize="17sp"
+               android:paddingStart="5dp"
+               android:text="  01/04/2019"
+               android:drawableLeft="@drawable/ic_calendar_today_24px">
+           </TextView>
+       </LinearLayout>
+        <View
+            android:id="@+id/division_modal_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout_modal_1"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/overlay_dark_20"/>
+        <LinearLayout
+            android:id="@+id/layout_modal_2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/division_modal_1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18dp"
+                android:paddingStart="5dp"
+                android:textStyle="bold"
+                android:text="Medio de pago :">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="17dp"
+                android:paddingStart="5dp"
+                android:text="Efectivo"
+               >
+            </TextView>
+        </LinearLayout>
+        <View
+            android:id="@+id/division_modal_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout_modal_2"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/overlay_dark_20"/>
+        <LinearLayout
+            android:id="@+id/layout_modal_3"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/division_modal_2"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18dp"
+                android:paddingStart="5dp"
+                android:textStyle="bold"
+                android:text="Sede :">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:paddingStart="5dp"
+                android:text="Carabayllo"
+                >
+            </TextView>
+        </LinearLayout>
+        <View
+            android:id="@+id/division_modal_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout_modal_3"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/overlay_dark_20"/>
+        <LinearLayout
+            android:id="@+id/layout_modal_4"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/division_modal_3"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18dp"
+                android:paddingStart="5dp"
+                android:textStyle="bold"
+                android:text="Caja :">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:paddingStart="5dp"
+                android:text="Caja Carabayllo 22-11"
+                >
+            </TextView>
+        </LinearLayout>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/modal_contenedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/modal_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorPrimary"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:text="PENSION_2019 MARZO"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/modal_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp">
+                    <TextView
+                        android:id="@+id/modal_montofinalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="Precio Unitario:"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/modal_acuentaLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_montofinalLabel"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="Descuento:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/modal_deudaLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_acuentaLabel"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="Precio Total:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/modal_estadoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_deudaLabel"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="Sub-Total:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/modal_igvLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_estadoLabel"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="IGV(18%):"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/modal_totalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_igvLabel"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="TOTAL:"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/modal_montofinalText"
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:layout_marginEnd="10dp"
+                        android:text="S/. 150.00" />
+
+                    <TextView
+                        android:id="@+id/modal_acuentaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/modal_montofinalText"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:layout_alignParentEnd="true"
+                        android:text="S/.0.00"/>
+                    <TextView
+                        android:id="@+id/modal_deudaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/modal_acuentaText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:text="S/. 150.00"
+                        />
+
+                    <TextView
+                        android:id="@+id/modal_estadoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/modal_deudaText"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="S/.127.40"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/modal_igvText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/modal_estadoText"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="S/.22.88"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/modal_totalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/modal_igvText"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/marginTop_pagos_card"
+                        android:layout_marginStart="@dimen/margin_start_modal"
+                        android:textSize="@dimen/textSize_pagos_card"
+                        android:text="S/.150.00"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

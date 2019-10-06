@@ -32,5 +32,6 @@
     <dimen name="marginStart_pagos_card">100dp</dimen>
     <dimen name="margin_card">8dp</dimen>
     <dimen name="padding_recycleyView">6dp</dimen>
+    <dimen name="margin_start_modal">120dp</dimen>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.brena.siadedapplication.Adapters;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -11,8 +12,10 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,6 +56,13 @@ public class PagosAdapter extends RecyclerView.Adapter<PagosAdapter.ViewHolder> 
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.card_pagos_detalles:
+                                AlertDialog.Builder mBuilder=new AlertDialog.Builder(context);
+                                View v1=LayoutInflater.from(context).inflate(R.layout.modal_detalles_pagos,null);
+                                mBuilder.setView(v1);
+                                AlertDialog dialog=mBuilder.create();
+                                dialog.show();
+                                Window window = dialog.getWindow();
+                                window.setLayout(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
                                 Toast.makeText(context, "DETALLES", Toast.LENGTH_LONG).show();
                                 break;
                             case R.id.card_pagos_descargar:
